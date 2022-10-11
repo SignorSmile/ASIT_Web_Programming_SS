@@ -1,0 +1,186 @@
+<!-- Комментарий -->
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Формы</title>
+    </head>
+    <body>
+        <h2>Форма №1</h2>
+        <h3>Анкета студента</h3>
+        <p>
+            <form action="">
+                <p><b>Ваше имя: </b><input name="user"></p>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Ваш пол:</b><br>
+                <input name="MW" type="radio" value="M"> Мужской<br>
+                <input name="MW" type="radio" value="W"> Женский
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>На каком курсе Вы учитесь?</b>
+                <input list="kurs">
+                <datalist id="kurs">
+                    <option>Первый</option>
+                    <option>Второй</option>
+                    <option>Третий</option>
+                    <option>Четвёртый</option>
+                </datalist>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Какие языки программирования Вы знаете?</b><br>
+                <input type="checkbox" name="PL" value="0">Паскаль<br>
+                <input type="checkbox" name="PL" value="1">C++<br>
+                <input type="checkbox" name="PL" value="2">Java<br>
+                <input type="checkbox" name="PL" value="3">JavaScript<br>
+                <input type="checkbox" name="PL" value="4">C#<br>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Напишите несколько слов о себе:</b><br>
+                <textarea name="about" required placeholder="Не более 200 символов"></textarea>
+                <p>
+                    <input type="submit" value="Отправить данные">
+                    <input type="reset" value="Очистить форму">
+                </p>
+            </form>
+        </p>
+
+        <h2>Форма №2</h2>
+        <p>
+            <form action="">
+                Текст сообщения*<br>
+                <textarea rows="5" cols="45" name="text" required></textarea>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Категория обращения<br>
+                <input list="category">
+                <datalist id="category">
+                    <option>Работа сайта</option>
+                    <option>Техническая поддержка</option>
+                </datalist>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Ожидаемая дата ответа<br>
+                (DD:MM:YYYY)<br>
+                <input type="date">
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Получить ответ по телефону<br>
+                <input type="checkbox" name="YN" value="0">
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Изображение(ваше фото, замечание)<br>
+                <input tipe="text">
+                <input type="file">
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Разделы сайта, которые вам понравились<br>
+                <textarea rows="5" cols="20" name="text" required></textarea>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Вы относите себя к</b><br>
+                <input type="radio" name="individ" value="0">Конкурент<br>
+                <input type="radio" name="individ" value="1">Партнёр<br>
+                <input type="radio" name="individ" value="2">Клиент<br>
+            </form>
+        </p>
+
+        <h2>Форма №3</h2>
+        <p>
+            <form action="">
+                <p><b>Ваше имя: </b><input name="user"></p>
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Ваше фото:
+                <input type="file">
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <input type="hidden">
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Ваш пол:</b><br>
+                <input name="MW" type="radio" value="M"> Мужской<br>
+                <input name="MW" type="radio" value="W"> Женский
+            </form>
+        </p>
+        <p>
+            <form action="">
+                <b>Что вы любите?</b><br>
+                <input name="Love" type="checkbox" value="0"> Чай<br>
+                <input name="Love" type="checkbox" value="1"> Кофе
+            </form>
+        </p>
+        <p>
+            <form action="">
+                Можно отправить ещё так:
+                <input type="image">
+            </form>
+        </p>
+        <p>
+            Введи свой пароль, он нам нужен)<br>
+            <input type="password"><br>
+            И email<br>
+            <input type="email">
+        </p>
+        <p>
+            <form action="">
+                <p>
+                    <input type="submit" value="Отправить данные">
+                    <input type="reset" value="Очистить форму">
+                </p>
+            </form>
+        </p>
+        <p>
+            Любимый цвет?<br>
+            <input type="color"><br>
+            День рождение?<br>
+            <input type="date"><br>
+            А если точнее?<br>
+            <input type="datetime"><br>
+            А по местному времени?<br>
+            <input type="datetime-local"><br>
+            Любимое число?<br>
+            <input type="number"><br>
+            Телефон?<br>
+            <input type="tel"><br>
+            Какое сейчас время?<br>
+            <input type="time"><br>
+            Стрицу в вк дашь?<br>
+            <input type="url"><br>
+            Какой любимый месяц?<br>
+            <input type="month"><br>
+            А неделя???<br>
+            <input type="week"><br>
+            Оцените форму по шкале<br>
+            <input type="range">
+        </p>
+    </body>
+</html>
